@@ -83,7 +83,7 @@ impl Cpu {
             for y in 0..Cpu::VRAM_HEIGHT {
                 for x in 0..Cpu::VRAM_WIDTH {
                     let pix = if self.vram[x + y * Cpu::VRAM_WIDTH] == 1 {
-                        '#'
+                        '█'
                     } else {
                         ' '
                     };
